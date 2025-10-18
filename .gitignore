@@ -1,0 +1,20 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse (if applicable)
+.classpath
+.project
+.settings/
+
+# Operating System specific
+.DS_Store
+Thumbs.db
