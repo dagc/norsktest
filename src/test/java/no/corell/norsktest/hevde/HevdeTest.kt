@@ -1,10 +1,10 @@
 package no.corell.norsktest.hevde
 
-import junit.framework.TestCase
-import org.junit.Test
 import no.corell.norsktest.hevde.Hevde.Companion.forvent
+import org.junit.jupiter.api.Test
 
-class HevdeTest : TestCase() {
+
+class HevdeTest  {
 
     @Test
     fun `2 pluss 2 er 4`() {
