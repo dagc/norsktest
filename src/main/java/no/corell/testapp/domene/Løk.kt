@@ -10,10 +10,7 @@ data class Løk(var kg: Double, var farge: Farge) : Testbar {
         if (farge == Farge.RØD && kg > 0.5) {
             forTung()
         }
-
-        if (farge == Farge.GUL && kg > 0.5) {
-
-
+        if (farge == Farge.GUL && kg > 0.7) {
             forTung()
         }
     }
