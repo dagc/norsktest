@@ -4,15 +4,15 @@ class Hevde {
 
 
     companion object {
-        fun forvent(inn: Int) : Forventet{
+        fun `forvent at`(inn: Int) : Forventet{
             return Forventet(inn)
         }
 
-        fun forvent(inn: String) : Forventet{
+        fun `forvent at`(inn: String) : Forventet{
             return Forventet(inn)
         }
 
-        fun forvent(inn: Testbar) : Forventet{
+        fun `forvent at`(inn: Testbar) : Forventet{
             inn.valider()
             return Forventet(inn)
         }

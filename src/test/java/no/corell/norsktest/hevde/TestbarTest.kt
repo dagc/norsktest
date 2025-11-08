@@ -1,6 +1,6 @@
 package no.corell.norsktest.hevde
 
-import no.corell.norsktest.hevde.Hevde.Companion.forvent
+import no.corell.norsktest.hevde.Hevde.Companion.`forvent at`
 import no.corell.testapp.domene.Farge
 import no.corell.testapp.domene.Løk
 import org.junit.jupiter.api.Test
@@ -13,7 +13,7 @@ class TestbarTest {
 
         var løk2 = Løk(0.05, Farge.HVIT)
 
-        forvent(løk1).er(løk2)
+        `forvent at`(løk1).`er lik`(løk2)
     }
 
     @Test
@@ -23,7 +23,7 @@ class TestbarTest {
         var løk2 = Løk(0.2, Farge.HVIT)
 
         try {
-            forvent(løk1).`er ikke lik`(løk2)
+            `forvent at`(løk1).`ikke er lik`(løk2)
         } catch(e: AssertionError) {
             //forventer dette, skal ikke brukes i vanlig tester
 

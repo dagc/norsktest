@@ -6,7 +6,7 @@ package no.corell.norsktest.hevde
 data class Forventet(var forventetdata: Any) {
 
 
-    fun er(i: Int) {
+    fun `er lik`(i: Int) {
         if(forventetdata as Int == i) {
             println("Test OK")
         } else {
@@ -15,7 +15,7 @@ data class Forventet(var forventetdata: Any) {
         }
     }
 
-    fun er(s: String) {
+    fun `er lik`(s: String) {
         if(forventetdata as String == s) {
             println("Test OK")
         } else {
@@ -24,7 +24,7 @@ data class Forventet(var forventetdata: Any) {
         }
     }
 
-    fun `er ikke`(i: Int) {
+    fun `ikke er lik`(i: Int) {
         if(forventetdata as Int != i) {
             println("Test OK")
         } else {
@@ -33,7 +33,7 @@ data class Forventet(var forventetdata: Any) {
         }
     }
 
-    fun  `er ikke`(s: String) {
+    fun  `ikke er lik`(s: String) {
         if(forventetdata as String != s) {
             println("Test OK")
         } else {
@@ -43,7 +43,7 @@ data class Forventet(var forventetdata: Any) {
     }
 
 
-    fun er(testbar: Testbar) {
+    fun `er lik`(testbar: Testbar) {
         testbar.valider()
         if(forventetdata as Testbar == testbar) {
             println("Test OK")
@@ -53,7 +53,7 @@ data class Forventet(var forventetdata: Any) {
         }
     }
 
-    fun `er ikke lik`(testbar: Testbar) {
+    fun `ikke er lik`(testbar: Testbar) {
         testbar.valider()
         if(forventetdata as Testbar != testbar) {
             println("Test OK")
